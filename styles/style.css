@@ -1,0 +1,365 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+     	-moz-box-sizing: border-box;
+         	 box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Circe-Bold';
+	src: url('../font/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../font/Circe-Bold.woff') format('woff'),
+		url('../font/Circe-Bold.ttf') format('truetype'),
+		url('../font/Circe-Bold.svg#Circe-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.clearfix:before,
+.clearfix:after {
+ content: '';
+ display: table;
+} 
+.clearfix:after {
+ clear: both;
+}
+.clearfix {
+ clear: both;
+ *zoom: 1;
+}
+.container {
+	max-width: 1001px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'PT Sans';
+	font-weight: 400;
+	font-size: 24px;
+	color: #2b2e35;
+}
+.button {
+	padding: 20px 50px;
+	color: #FFF;
+	background-color: #FF621F;
+	border: none;
+	line-height: 1;
+	font-family: 'PT Sans';
+	font-weight: 700;
+	font-size: 30px;
+	box-shadow: 0 6px 0 rgb(255,51,42);
+	cursor: pointer;
+	transition: background-color .3s ease-in;
+}
+.button:hover,
+.button:active,
+.button:focus {
+	background-color: #ff332a;
+}
+.text-italic {
+	font-family: Georgia;
+	font-style: italic;
+}
+
+/* header styles */
+.site-header {
+	padding: 40px 0;
+}
+.logo {
+	width: 314px;
+	margin: 0 auto;
+}
+.sub-logo {
+	font-size: 27px;
+	color: #18374b;
+	margin: 0;
+}
+.line {
+	position: relative;
+}
+.line:before {
+	content: "";
+	width: 90%;
+	height: 1px;
+	background-color: #18374b;
+	position: absolute;
+	top: 30px;
+	left: 5%;
+	right: 5%;
+}
+.site-title {
+	margin: 85px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Circe-Bold';
+}
+.title {
+	font-size: 34px;
+	color: #FF621F;
+	margin: 0 0 45px;
+}
+.sub-title {
+	font-size: 30px;
+	color: #020001;
+	max-width: 965px;
+	line-height: 1.3;
+}
+/* end header styles */
+
+/* event styles */
+.event {
+	margin: 20px 0 50px;
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.speaker-info {
+	width: 50%;
+	background-color: #ff621f;
+	padding: 32px;
+	color: #FFF;
+}
+.event-date {
+	display: flex;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.calendar {
+	font-weight: 700;
+	width: 126px;
+	margin: 0 32px 60px 0;
+}
+.month {
+	font-size: 22px;
+	background-color: #2B2E35;
+	margin: 0;
+	padding: 6px 41px;
+}
+.number {
+	font-size: 74px;
+	color: #C2C2C2;
+	background-color: #fff;
+	margin: 0;
+	padding: 11px 21px;
+}
+.date-description {
+	text-transform: uppercase;
+	width: 290px;
+}
+.day,
+.data {
+	font-family: 'Circe-Bold';
+	margin: 0 0 12px;
+}
+.day {
+	font-size: 30px;
+}
+.data {
+	font-size: 36px;
+	padding-bottom: 15px;
+	border-bottom: 2px dashed #fff;
+}
+.time {
+	margin: 17px 0;
+}
+.speaker {
+	text-align: center;
+	font-size: 22px;
+}
+.speaker-name {
+	width: 130px;
+	margin: 15px auto;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.speaker-list {
+	margin: 50px 0;
+	font-size: 18px;
+}
+.speaker-item + .speaker-item {
+	margin-top: 20px;
+}
+.vebinar-info {
+	width: 50%;
+	padding: 32px 21px 60px 32px;
+	background-color: #EAEAEA;
+}
+.timer {
+	text-transform: uppercase;
+	text-align: center;
+}
+.timer-title {
+	margin: 0;
+	font-size: 21px;
+}
+.time-item {
+	font-family: 'Circe-Bold';
+	font-size: 48px;
+	color: #FFF;
+	background-color: #2b2e35;
+	display: inline-block;
+	padding: 10px 8px;
+	margin: 20px 0 0;
+	width: 67px;
+	height: 67px;
+	-webkit-border-radius: 10px;
+	        border-radius: 10px;
+}
+.time-description p {
+	display: inline-block;
+	font-family: 'Circe-Bold';
+	font-size: 14px;
+	padding: 0 10px;
+	margin: 0;
+}
+.list-title {
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.vebinar-list {
+	list-style-image: url('../images/symbol.png');
+	margin: 70px 0 0;
+}
+.vebinar-item {
+	padding-left: 10px;
+}
+.vebinar-item + .vebinar-item {
+	margin-top: 32px;
+}
+/* end event styles */
+
+/* format styles */
+.format {
+	text-align: center;
+}
+.format .text-italic {
+	max-width: 570px;
+	margin: 0 auto;
+}
+.format .text-italic span {
+	font-size: 30px;
+}
+.format-title {
+	font-weight: 700;
+	color: #FFF;
+	font-size: 36px;
+	background-color: #ff621f;
+	padding: 10px 40px;
+	margin: 45px 0 15px;
+	display: inline-block;
+}
+.format-description {
+	font-size: 36px;
+	max-width: 915px;
+	margin: 20px auto 30px;
+	padding-bottom: 30px;
+	border-bottom: 2px dashed #2b2e35;
+}
+/* end format styles */
+
+/* technology styles */
+.technology {
+	background: url('../images/bg-teh.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	padding: 20px 0;
+}
+.technology-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 36px;
+	margin: 0;
+}
+.technology b {
+	font-size: 27px;
+}
+/* end technology styles */
+
+/* collage styles */
+.collage {
+	background: url('../images/bg-collage.jpg') center center no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	padding: 20px 0;
+}
+.photo-collage {
+	width: 100%;
+	height: auto;
+}
+/* end collage styles */
+
+/* footer styles */
+.site-footer {
+	padding: 10px 0 30px;
+	text-align: center;
+}
+.footer-description {
+	font-size: 36px;
+	margin: 0;
+	text-align: left;
+}
+.footer-description p {
+	margin: 0;
+}
+.footer-description .bold {
+	font-size: 30px;
+	font-weight: 700;
+	margin: 50px 0 70px;
+}
+.social-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 40px 0 0;
+}
+.social-item {
+	display: inline-block;
+	transition: opacity .3s ease-in;
+}
+.social-item:hover,
+.social-item:active,
+.social-item:focus {
+	opacity: .6;
+}
+/* end footer styles */
+
+@media only screen and (max-width: 1026px) {
+	body {
+		padding: 0 30px;
+	}
+	.button {
+		font-size: 28px;
+	}
+	.line:before {
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+	.event {
+		-webkit-flex-direction: column-reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+	}
+	.speaker-info,
+	.vebinar-info {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.button {
+		font-size: 26px;
+	}
+	.technology-title,
+	.technology b,
+	.footer-description,
+	.footer-description .bold {
+		font-size: 24px;
+	}
+	.format-description {
+		font-size: 30px;
+	}
+}
